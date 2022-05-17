@@ -1,0 +1,10 @@
+choice
+	prompt "Mainboard vendor"
+	default VENDOR_EMULATION
+
+source "site-local/src/mainboard/*/Kconfig.name"
+
+endchoice
+
+source "site-local/src/mainboard/*/Kconfig"
+
